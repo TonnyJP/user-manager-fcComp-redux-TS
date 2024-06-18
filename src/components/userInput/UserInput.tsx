@@ -7,7 +7,8 @@ import { RootState } from "../../store";
 
 type UserInputT = {
     modifyFunction: (user: User) => (dispatch: Dispatch<Action>) => void;
-    buttonTitle: string
+    buttonTitle: string;
+    btnClass: string
 }
 
 export const UserInput: React.FC<UserInputT> = (props) => {
@@ -22,6 +23,10 @@ export const UserInput: React.FC<UserInputT> = (props) => {
 
     const onUpdateUser = (e: React.FormEvent<HTMLButtonElement>) => {
         e.preventDefault();
+        setEmail("");
+        setName("");
+        setGroup("");
+        setIsAdmin(false)
         props.modifyFunction({
             name: name,
             email: email,
@@ -61,7 +66,7 @@ export const UserInput: React.FC<UserInputT> = (props) => {
 
             <InputElement type="text" value={group} name="group" onChanged={onGroupeChanged} />
 
-            <button onClick={onUpdateUser}>{props.buttonTitle}</button>
+            <button className={`${props.btnClass} left-space`} onClick={onUpdateUser}>{props.buttonTitle}</button>
         </>
     )
 }

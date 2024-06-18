@@ -42,6 +42,7 @@ const userReducer = (
         ...state,
         isUpdating: false,
         users: [...newUserLs, action.payload],
+        inModification: { id: "" },
       };
     case ActionType.ERROR:
       return { ...state, isError: true, isLoading: false, isUpdating: false };

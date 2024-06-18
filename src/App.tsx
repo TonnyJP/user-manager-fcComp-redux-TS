@@ -22,11 +22,13 @@ function App() {
     <header className='App-header'>
       <h1>User Manager</h1>
     </header>
-    {!isAddingUser && <button onClick={onSetAddingUser}>Add User</button>}
+    {!isAddingUser && <button className='home-add-user-btn' onClick={onSetAddingUser}>Add User</button>}
     {isAddingUser && <AddUserForm />}
-    <UserList />
+    <div className='user-list-container'>
+      <UserList />
+    </div>
     {isUpdating && <UpdateUser />}
-    {users.length > 0 && <button onClick={onClearList}>Clear List</button>}
+    {users.length > 0 && <button className="clear-list-btn top-space" onClick={onClearList}>Clear List</button>}
   </div>
 }
 

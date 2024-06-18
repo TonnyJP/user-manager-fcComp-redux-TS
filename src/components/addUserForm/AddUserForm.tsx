@@ -6,7 +6,7 @@ export const AddUserForm: React.FC = () => {
     return (<>
         <form className='create-new-user'>
             <h2>New User</h2>
-            <UserInput modifyFunction={addNewUserAction} buttonTitle={"Add User"} />
+            <UserInput modifyFunction={addNewUserAction} buttonTitle={"Add User"} btnClass="add-user-btn" />
         </form>
     </>)
 }

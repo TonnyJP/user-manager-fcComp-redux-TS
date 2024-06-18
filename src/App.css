@@ -23,7 +23,134 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+/* buttont */
+.update-user-btn {
+  background: #fdcb6e;
+  margin-top: 0.3rem;
+  color: #2d3436;
+  padding: 0.3rem 0.6rem;
+  border-radius: 0.5rem;
+  font-size: large;
+  font-weight: 600;
+  transition: all 0.5s;
+  border: solid #2d3436 1px;
+}
+.update-user-btn:hover {
+  background: #e67e22;
+  transition: all 0.5s;
+}
+.clear-list-btn,
+.delete-user-btn {
+  background: #e74c3c;
+  margin-top: 0.3rem;
+  color: whitesmoke;
+  padding: 0.3rem 0.6rem;
+  border-radius: 1rem;
+  font-size: large;
+  font-weight: 600;
+  transition: all 0.5s;
+  border: solid #2d3436 1px;
+}
+.delete-user-btn {
+  border-radius: 0.5rem;
+}
+.clear-list-btn:hover,
+.delete-user-btn:hover {
+  background: #c0392b;
+  transition: all 0.5s;
+}
 
+.home-add-user-btn {
+  background: #95a5a6;
+  margin-top: 2rem;
+  color: #2d3436;
+  padding: 0.3rem 0.6rem;
+  border-radius: 1rem;
+  font-size: large;
+  font-weight: 600;
+  transition: all 0.5s;
+  border: solid #2d3436 1px;
+}
+.home-add-user-btn:hover {
+  background-color: #2d3436;
+  color: whitesmoke;
+  transition: all 0.5s;
+}
+.add-user-btn {
+  background: #00b894;
+  margin-top: 0.3rem;
+  color: #2d3436;
+  padding: 0.3rem 0.6rem;
+  border-radius: 0.5rem;
+  font-size: large;
+  font-weight: 600;
+  transition: all 0.5s;
+  border: solid #2d3436 1px;
+}
+.add-user-btn:hover {
+  background: #27ae60;
+  transition: all 0.5s;
+}
+/* end button */
+
+/* adding User form */
+.create-new-user {
+}
+.user-list {
+}
+.user-list-container {
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+table {
+  width: 80%;
+  border: solid 1px #2d3436;
+  border-radius: 0.5rem;
+  border-collapse: collapse;
+}
+th {
+  border-bottom: #95a5a6 3px solid;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+.single-user {
+  border-bottom: 1px solid #2d3436;
+  height: 3rem;
+  align-items: center;
+}
+input {
+  height: 1.5rem;
+  border-radius: 0.5rem;
+  border: solid 1px #2d3436;
+  padding: 0.3rem;
+  font-size: large;
+}
+label {
+  font-weight: 600;
+  font-size: larger;
+  margin: 1rem;
+  text-transform: capitalize;
+}
+
+.create-new-user,
+.update-user {
+  width: 80%;
+  border: solid 1px #2d3436;
+  border-radius: 0.5rem;
+  margin: auto;
+  margin-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.left-space {
+  margin-left: 2rem;
+}
+.top-space {
+  margin-top: 2rem;
+}
 .App-link {
   color: #61dafb;
 }

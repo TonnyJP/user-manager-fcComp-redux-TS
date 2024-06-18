@@ -16,7 +16,7 @@ export const DisplaySingleUser: React.FC<DisplaySingleUserT> = (props) => {
         <td>{email}</td>
         <td>{admin ? "true" : "false"}</td>
         <td>{group}</td>
-        <td><button onClick={props.onUpdate}>Update</button></td>
-        <td><button onClick={() => props.onDelete(id as string)}>Delete</button></td>
+        <td><button className="update-user-btn" onClick={props.onUpdate}>Update</button></td>
+        <td><button className="delete-user-btn" onClick={() => props.onDelete(id as string)}>Delete</button></td>
     </tr>
 }

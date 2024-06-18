@@ -5,6 +5,6 @@ export const UpdateUser: React.FC = () => {
     const { updateUserAction } = useActionCreator();
     return <form className="update-user">
         <h3>Update User</h3>
-        < UserInput modifyFunction={updateUserAction} buttonTitle={"Update User"} />
+        < UserInput modifyFunction={updateUserAction} buttonTitle={"Update User"} btnClass="update-user-btn" />
     </form>
 }
